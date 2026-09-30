@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>7. HTML Forms</h1><hr>
+<font color="Darkblue"><h2>7.1 HTML Forms</h2></font>
+    <p>
+        An HTML form is used to collect user input, which is
+        most often sent to a server for processing.
+    </p>
+<font color="Darkblue"><h2>7.2 The form Element</h2></font>
+    <p>
+        The &lt;form&gt; element is a container used to house
+        and coordinate multiple user input components.
+    </p>
+    <ul>
+        <li>Text Fields &amp; Areas</li>
+        <li>Checkboxes &amp; Radios</li>
+        <li>Submit Buttons</li>
+    </ul>
+<font color="Darkblue"><h2>7.3 The input Element</h2></font>
+    <p>
+        The &lt;input&gt; element can be displayed in many ways
+        depending on its type attribute.
+    </p>
+    <ul>
+        <li>type="text" - Single-line text input field</li>
+        <li>type="radio" - Radio button for selecting one option</li>
+        <li>type="checkbox" - Checkbox for multiple choices</li>
+        <li>type="submit" - Button to submit form data</li>
+    </ul>
+<font color="Darkblue"><h2>7.4 Text Fields</h2></font>
+    <p>
+        The &lt;input type="text"&gt; defines a single-line
+        input field for user text input.
+    </p>
+    &lt;form&gt;
+    &lt;label&gt;First name:&lt;/label&gt;<br>
+    &lt;input type="text" name="fname"&gt;<br>
+    &lt;label&gt;Last name:&lt;/label&gt;<br>
+    &lt;input type="text" name="lname"&gt;
+&lt;/form&gt;
+    <form>
+        <label>First name:</label><br>
+        <input type="text" name="fname"><br>
+        <label>Last name:</label><br>
+        <input type="text" name="lname">
+    </form>
+<font color="Darkblue"><h2>7.5 The label Element</h2></font>
+    <p>
+        The &lt;label&gt; element provides a label for an input.
+        The for attribute must match the id of the target input.
+    </p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </form>
+<font color="Darkblue"><h2>7.6 Radio Buttons</h2></font>
+    <p>
+        The &lt;input type="radio"&gt; defines a radio button,
+        allowing selection of ONE option from a set.
+    </p>
+    <form>
+        <input type="radio" id="html"
+               name="fav_lang" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css"
+               name="fav_lang" value="CSS">
+        <label for="css">CSS</label>
+    </form>
+<font color="Darkblue"><h2>7.7 Checkboxes</h2></font>
+    <p>
+        The &lt;input type="checkbox"&gt; defines a checkbox,
+        letting a user select ZERO or MORE options.
+    </p>
+    <form>
+        <input type="checkbox" id="v1"
+               name="vehicle1" value="Bike">
+        <label for="v1">I have a bike</label>
+        <input type="checkbox" id="v2"
+               name="vehicle2" value="Car">
+        <label for="v2">I have a car</label>
+    </form>
+<font color="Darkblue"><h2>7.8 Submit Button</h2></font>
+    <p>
+        The &lt;input type="submit"&gt; defines a button for
+        submitting the form data to a form-handler.
+    </p>
+    <form action="/action_page.php">
+        <label for="first">First name:</label>
+        <input type="text" id="first" value="John">
+        <label for="last">Last name:</label>
+        <input type="text" id="last" value="Doe">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <a href="HTML MAIN PAGE.html">
+      <button>Back to main page</button>
+    </a>
+</body>
+</html>

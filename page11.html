@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Hyperlinks</title>
+</head>
+<body>
+    <h1>HTML Hyperlinks</h1><hr>
+<font color="darkblue"><h2>1. HTML Links - Syntax</h2></font>
+    <p>
+        HTML links are hyperlinks. They allow users to move
+        from one page to another.
+    </p>
+    <p>
+        The &lt;a&gt; tag defines a hyperlink.
+    </p>
+    <pre>
+&lt;a href="url"&gt;link text&lt;/a&gt;
+    </pre>
+    <a href="https://itmbu.ac.in">
+        Visit ITMBU
+    </a>
+<font color="darkblue"><h2>2. Target Attribute</h2></font>
+    <p>
+        The target attribute specifies where to open the
+        linked document.
+    </p>
+    <p>
+        Example of opening a link in a new tab:
+    </p>
+    <pre>
+&lt;a href="https://itmbu.ac.in" target="_blank"&gt;
+        Visit ITMBU
+&lt;/a&gt;
+    </pre>
+    <a href="https://itmbu.ac.in" target="_blank">
+        Visit ITMBU
+    </a>
+    <p>
+        Common target values are _self, _blank, _parent and _top.
+    </p>
+  <font color="darkblue"><h2>3. Absolute and Relative URLs</h2></font>
+    <h3>Absolute URL</h3>
+    <p>
+      An absolute URL uses the complete web address.
+    </p>
+    <a href="https://www.google.com">
+        Google
+    </a>
+    <h3>Relative URL</h3>
+    <p>
+        A relative URL points to a page or file within
+        the current website.
+    </p>
+    <a href="HTML MAIN PAGE.html">
+        Main Page
+    </a>
+<font color="darkblue"><h2>4. Image as a Link</h2></font>
+    <p>
+        To use an image as a link, place the &lt;img&gt; tag
+        inside the &lt;a&gt; tag.
+    </p>
+    <pre>
+&lt;a href="HTML MAIN PAGE.html"&gt;
+&lt;img src="IMG_20260926_101924.jpg"
+    alt="HTML tutorial"
+    style="width:100px;height:80px;"&gt;
+&gt;/a&gt;
+    </pre>
+    <a href="HTML MAIN PAGE.html">
+        <img src="IMG_20260926_101924.jpg"
+             alt="HTML tutorial"
+             style="width:100px;height:80px;">
+    </a>
+<font color="darkblue"><h2>5. Link to an Email Address</h2></font>
+    <p>
+        Use mailto: inside the href attribute to create
+        an email link.
+    </p>
+    <pre>
+&gt;a href="mailto:someone@example.com"&lt;
+    Send email
+&lt;/a&gt;
+    </pre>
+    <a href="mailto:someone@example.com">
+        Send email
+    </a>
+<font color="darkblue"><h2>6. Button as a Link</h2></font>
+    <p>
+        An HTML button can be used as a link with JavaScript.
+    </p>
+    <pre>
+&lt;button onclick="document.location='HTML MAIN PAGE.html'"&gt;
+    HTML Main Page
+&lt;/button&gt;
+    </pre>
+    <button onclick="document.location='HTML MAIN PAGE.html'">
+        HTML Main Page
+    </button>
+<font color="darkblue"><h2>7. Link Titles</h2></font>
+    <p>
+        The title attribute specifies extra information about
+        an element, often shown as a tooltip when the mouse
+        is moved over the link.
+    </p>
+    <a href="HTML MAIN PAGE.html"
+       title="Go to Main Page">
+        Visit Main Page
+    </a>
+    <hr>
+    <a href="HTML MAIN PAGE.html">
+      <button>Back to main page</button>
+    </a>
+</body>
+</html>
